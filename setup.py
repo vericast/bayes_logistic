@@ -38,19 +38,19 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
 requirements = [
-    # TODO: put package requirements here
+    "numpy", "scipy"
 ]
 
 test_requirements = [
-    # TODO: put package test requirements here
+    "numpy", "scipy"
 ]
 
 setup(
     name='bayes_logistic',
-    version='0.1.0',
+    version='0.2.0',
     description="Bayesian Logistic Regression using Laplace approximations to the posterior.",
     long_description=readme + '\n\n' + history,
-    author="Rob Haslinger",
+    author="MaxPoint Interactive, Inc.",
     author_email='rob.haslinger@maxpoint.com',
     url='https://github.com/maxpoint/bayes_logistic',
     packages=[
@@ -64,7 +64,7 @@ setup(
     zip_safe=False,
     keywords='bayes_logistic',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
