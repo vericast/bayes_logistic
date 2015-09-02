@@ -349,6 +349,8 @@ def fit_bayes_logistic(y, X, wprior, H, weights=None, solver='Newton-CG', bounds
         This is only used if the solver is set to 'L-BFGS-B'. In that case, a tuple
         (lower_bound, upper_bound), both floats, is defined for each parameter.  See the
         scipy.optimize.minimize docs for further information.
+    maxiter : int
+        maximum number of iterations for scipy.optimize.minimize solver.
 
     Returns
     -------
