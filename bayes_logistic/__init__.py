@@ -30,3 +30,4 @@ __email__ = 'rob.haslinger@maxpoint.com'
 __version__ = '0.1.0'
 
 from .bayes_logistic import *
+from .sklearn import BayesLogisticClassifier, BayesLogisticRegressor

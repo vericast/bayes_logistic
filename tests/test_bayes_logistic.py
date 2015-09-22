@@ -35,7 +35,8 @@ Tests for `bayes_logistic` module.
 
 import unittest
 
-from bayes_logistic import bayes_logistic
+from sklearn.datasets import load_iris
+from bayes_logistic import bayes_logistic, sklearn
 
 class TestBayes_logistic(unittest.TestCase):
 
@@ -47,3 +48,20 @@ class TestBayes_logistic(unittest.TestCase):
 
     def tearDown(self):
         pass
+
+
+class TestSklearnModel(unittest.TestCase):
+
+    def setUp(self):
+        self.data = load_iris()
+
+    def testLR(self):
+        c = sklearn.BayesLogisticClassifier()
+
+        ind = self.data.target[self.data.target <= 1]
+
+        X = self.data.data[ind, :]
+        y = self.data.target[ind]
+
+        c.fit(X, y)
+        c.predict(X)
