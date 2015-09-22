@@ -163,7 +163,7 @@ class BayesLogisticBase(six.with_metaclass(ABCMeta, BaseEstimator), ClassifierMi
         """
         dim = X.shape[1]
         if self.H_ is None:
-            self.H_ = np.diag(np.ones(dim), dim) * 0.001
+            self.H_ = np.diag(np.ones(dim)) * 0.001
         if self.coef_ is None:
             self.coef_ = np.zeros(dim)
 
