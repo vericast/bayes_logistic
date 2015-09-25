@@ -8,6 +8,8 @@ Bayes Logistic Regression
 .. image:: https://img.shields.io/pypi/v/bayes_logistic.svg
         :target: https://pypi.python.org/pypi/bayes_logistic
 
+.. image:: https://img.shields.io/pypi/pyversions/bayes_logistic.svg
+        :target: https://pypi.python.org/pypi/bayes_logistic
 
 This package will fit Bayesian logistic regression models with arbitrary
 prior means and covariance matrices, although we work with the inverse covariance matrix which is the log-likelihood
@@ -29,4 +31,3 @@ Demo
 `Example Notebook`_
 
 .. _Example Notebook: notebooks/bayeslogistic_demo.ipynb
-
