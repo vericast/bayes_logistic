@@ -11,7 +11,6 @@ Bayes Logistic Regression
 .. image:: https://img.shields.io/pypi/pyversions/bayes_logistic.svg
         :target: https://pypi.python.org/pypi/bayes_logistic
         
-.. image:: https://img.shields.io/github/license/MaxPoint/bayes_logistic.svg
 
 This package will fit Bayesian logistic regression models with arbitrary
 prior means and covariance matrices, although we work with the inverse covariance matrix which is the log-likelihood
@@ -24,12 +23,14 @@ Individual data points may be weighted in an arbitrary manner.
 Finally, p-values on each fitted parameter may be calculated and this can be used
 for variable selection of sparse models.
 
-* Free software: BSD license
+* Free software: |lic|
 * Documentation: https://bayes_logistic.readthedocs.org.
+
+.. |lic| image:: https://img.shields.io/github/license/MaxPoint/bayes_logistic.svg
 
 Demo
 ----
 
 `Example Notebook`_
 
-.. _Example Notebook: notebooks/bayeslogistic_demo.ipynb
+.. _Example Notebook: http://nbviewer.ipython.org/github/MaxPoint/bayes_logistic/blob/master/notebooks/bayeslogistic_demo.ipynb
