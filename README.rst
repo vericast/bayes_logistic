@@ -10,6 +10,8 @@ Bayes Logistic Regression
 
 .. image:: https://img.shields.io/pypi/pyversions/bayes_logistic.svg
         :target: https://pypi.python.org/pypi/bayes_logistic
+        
+.. image:: https://img.shields.io/github/license/MaxPoint/bayes_logistic.svg
 
 This package will fit Bayesian logistic regression models with arbitrary
 prior means and covariance matrices, although we work with the inverse covariance matrix which is the log-likelihood
