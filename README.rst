@@ -25,8 +25,10 @@ for variable selection of sparse models.
 
 * Free software: |lic|
 * Documentation: https://bayes_logistic.readthedocs.org.
+* See related presentation video `here`_.
 
 .. |lic| image:: https://img.shields.io/github/license/MaxPoint/bayes_logistic.svg
+.. _here: http://www.opendatascience.com/conferences/rob-haslinger-at-bdf-2015-bayes_logistic-a-python-package-for-bayesian-logistic-regression/
 
 Demo
 ----
