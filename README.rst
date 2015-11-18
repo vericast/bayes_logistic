@@ -2,6 +2,11 @@
 Bayes Logistic Regression
 =========================
 
++------+-----------+
+|asdasd|asdasdasd  |
++======+===========+
+
+
 .. image:: https://img.shields.io/travis/MaxPoint/bayes_logistic.svg
         :target: https://travis-ci.org/MaxPoint/bayes_logistic
 
@@ -23,7 +28,7 @@ Individual data points may be weighted in an arbitrary manner.
 Finally, p-values on each fitted parameter may be calculated and this can be used
 for variable selection of sparse models.
 
-* Free software: |lic|
+* Free software (BSD): |lic|
 * Documentation: https://bayes_logistic.readthedocs.org.
 * See related presentation video `here`_.
 
