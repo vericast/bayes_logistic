@@ -60,8 +60,12 @@ def logistic_prob(X, w):
     # truncate to avoid numerical over/underflow
     z = np.clip(z, -trunc, trunc)
 
+    z = [np.float64(x) for x in z]
+    z = np.array(z)
+
     # calculate logitstic probability
     pr = np.exp(z)
+
     pr = pr / (1. + pr)
 
     return pr
@@ -378,6 +382,8 @@ def fit_bayes_logistic(y, X, wprior, H, weights=None, solver='Newton-CG', bounds
         raise ValueError('y must be a vector of shape (p, )')
     if len(np.atleast_1d(y)) != nX:
         raise ValueError('y and X do not have the same number of rows')
+    if y.dtype != np.dtype('int') and y.dtype != np.dtype('bool'):
+        raise ValueError('y must be array of binary integers (0, 1) or bool')
 
     # check wprior
     if len(wprior.shape) > 1:
@@ -535,6 +541,9 @@ def bayes_logistic_prob(X, w, H):
 
     # do a truncation to prevent exp overflow
     z = np.clip(z, -trunc, trunc)
+
+    z = [np.float64(x) for x in z]
+    z = np.array(z)
 
     # get the moderated logistic probability
     pr = np.exp(z)
