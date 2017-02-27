@@ -1,6 +1,6 @@
-========
+=====
 Usage
-========
+=====
 
 To use Bayes Logistic Regression in a project::
 
@@ -18,3 +18,17 @@ Methods
 .. autofunction:: get_pvalues
 
 .. autofunction:: fit_bayes_logistic
+
+
+======================
+scikit-learn interface
+======================
+
+For an interface similar to scikit-learn the following classes can be used.
+
+Classes
+-------
+
+.. autoclass:: BayesLogisticClassifier
+
+.. autoclass:: BayesLogisticRegressor
